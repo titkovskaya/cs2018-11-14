@@ -24,5 +24,15 @@ package by.it.titkovskaya._tasks_.lesson04;
 */
 
 public class TaskC3 {
+    public static void main(String[] args) {
+
+    }
 
 }
+
+//for (int i = 2; i < 11; i++) {
+  //      for (int k = 2; k < 11; k++) {
+    //    int result = k * i;
+      //  System.out.println(i + " умножить на " + k + " равно " + result);
+        //}
+        //}

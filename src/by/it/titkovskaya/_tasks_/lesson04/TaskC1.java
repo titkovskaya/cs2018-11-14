@@ -1,5 +1,7 @@
 package by.it.titkovskaya._tasks_.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,34 @@ package by.it.titkovskaya._tasks_.lesson04;
 
 */
 public class TaskC1 {
-
-
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scanner = new Scanner(System.in);
+        int salary = scanner.nextInt();
+        if (salary < 300 || salary > 3000) System.out.println("Мы вам перезвоним!");
+        else for (int month = 0; month <= 14; month++) {
+            if (month == 0 || month == 13 || month == 14) System.out.println("За месяц " + month + " начислено $0.0");
+            int sum = salary * 3 / 2;
+            if (month == 1) System.out.println("За январь начислено $" + sum + ".0");
+            if (sum==666) {System.out.println("За январь начислено $" + sum + ".0"); break;}
+            else if (month == 2) System.out.println("За февраль начислено $" + sum + ".0");
+            else if (month == 3) System.out.println("За март начислено $" + sum + ".0");
+            else if (month == 4) System.out.println("За апрель начислено $" + sum + ".0");
+            else if (month == 5) System.out.println("За май начислено $" + sum + ".0");
+            else if (month == 6) System.out.println("За июнь начислено $" + salary + ".0");
+            if (salary==666) {System.out.println("За январь начислено $" + sum + ".0");
+                System.out.println("За февраль начислено $" + sum + ".0");
+                System.out.println("За март начислено $" + sum + ".0");
+                System.out.println("За апрель начислено $" + sum + ".0");
+                System.out.println("За май начислено $" + sum + ".0");
+                System.out.println("За июнь начислено $" + salary + ".0");
+                break;}
+            else if (month == 7) System.out.println("За июль начислено $" + salary + ".0");
+            else if (month == 8) System.out.println("За август начислено $" + salary + ".0");
+            else if (month == 9) System.out.println("За сентябрь начислено $" + sum + ".0");
+            else if (month == 10) System.out.println("За октябрь начислено $" + sum + ".0");
+            else if (month == 11) System.out.println("За ноябрь начислено $" + sum + ".0");
+            else if (month == 12) System.out.println("За декабрь начислено $" + sum + ".0");
+            }
+    }
 }

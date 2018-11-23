@@ -25,7 +25,17 @@ package by.it.titkovskaya._tasks_.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int limit = scanner.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= limit; i++) {
+            sum += i;
+            if (sum > limit) break;
+            System.out.print(sum + ",");
+        }
+    }
 }
