@@ -31,5 +31,5 @@ boolean win(Dog otherDog)
 
 
 public class TaskC1 {
-
+    
 }
